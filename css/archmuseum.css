@@ -1,0 +1,546 @@
+/* Color scheme:
+Yellow: #F4E332
+Grey1: #5C5C5B
+Grey2: #757575
+Grey3: #DEDEDC */
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    background-color: #fff;
+    color: #555;
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+    font-weight: 200;
+    text-rendering: optimizeLegibility;
+    overflow-x: hidden;
+}
+
+p span {
+    color: rgb(31, 31, 31);
+    background-color: white;
+    font-weight: 300;
+}
+
+h1 span,
+h3 span,
+h4 span {
+    background-color: white;
+}
+
+body {
+    background-size: 20px 20px;
+    background-image:
+      linear-gradient(to right, rgb(204, 204, 204) 1px, transparent 1px),
+      linear-gradient(to bottom, rgb(204, 204, 204) 1px, transparent 1px);
+  }
+
+
+.row {margin: 0 auto; }
+
+
+
+/* ================================================== header =======================================================*/
+
+header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://momenti.lv/pictures/img.php?img=2128/7B776DA4-8BFB-48B1-980A-A1B9644EDD0B.jpg');
+    background-size: cover;              /*komanda, lai attēls iezūmotos kā vajag*/
+    background-position: center;
+    height: 100vh;
+    background-attachment: fixed; 
+} 
+
+nav {background-color: #333 !important;}
+
+.transparent {background: transparent !important;}
+  
+.navbar-toggler {background-color: rgba(244, 228, 50, 0.514);}
+  
+.navbar-nav {max-width: 100%;}
+
+.navbar-brand {margin-right: 0;}
+
+.navbar-nav li a:link, 
+.navbar-nav li a:visited {
+      text-transform: uppercase;
+      color: #DEDEDC !important;
+      font-weight: 400;
+      font-size: 100%;
+      transition: color 0.2s;
+  }
+  
+.navbar-nav li a:hover, 
+.navbar-nav li a:active {
+      /* text-transform: uppercase; */
+     background-color: rgba(244, 228, 50, 0.288) !important;  
+  }
+
+
+.container {
+    display: grid;
+    grid-template-columns: auto 300px auto;
+    grid-template-rows: auto 50px; 
+}
+
+.container-h1 {
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+
+.hero-text-box {
+    max-width: 1400px;
+    margin: auto;
+    padding: 10px 30px;
+}
+
+h1 {
+    padding-top: 100px;
+    font-size: 500%;
+    font-weight: 700;
+    color: #F4E332;   
+}
+
+h2 {
+    padding: 30px 0;
+    color: #DEDEDC;
+    font-weight: 200;
+    font-size: 150%;
+}
+
+h3 {
+    color: #555;
+    font-weight: 700;
+    font-size: 300%;
+}
+
+/* =================================POGAS========================================*/
+
+
+.btn:link,
+.btn:visited ,
+input[type=submit] {
+    display: inline-block;
+    padding: 10px 30px;
+    font-weight: 300;
+    text-decoration: none;
+    border-radius: 200px;
+    transition: background-color 0.2s, border 0.2s, color 0.2s;
+}
+
+.btn-full:link,
+.btn-full:visited ,
+input[type=submit] {
+    background-color: #F4E332;
+    border: 1px solid #F4E332;
+    color: #555;
+    margin-right: 15px;
+}
+
+.btn-ghost:link,
+.btn-ghost:visited {
+    border: 1px solid #F4E332;
+    color: #F4E332;
+}
+
+
+header .btn:hover,
+header .btn:active,
+input[type=submit]:hover,
+input[type=submit]:active {
+    background-color: rgba(244, 228, 50, 0.5);
+}
+
+.btn-full:hover,
+.btn-full:active {
+    border: 1px solid rgba(244, 228, 50, 0.5);
+}
+
+.btn-ghost:hover,
+.btn-ghost:active {
+    border: 1px solid rgba(244, 228, 50, 0.5);
+    background-color: rgba(244, 228, 50, 0.5);
+    color: #555;
+}
+
+section .btn:hover,
+section .btn:active,
+input[type=submit]:hover,
+input[type=submit]:active {
+    background-color: rgba(244, 228, 50, 0.5);
+}
+
+/* -------------------------archmuseum JAUNUMI-------------------------------- */
+
+
+
+.img-arhivs {
+    opacity: 0.6;  
+    transition: opacity 0.2s;
+    border-radius: 5px 5px 0 0;
+    border-radius: 20px;
+}
+
+.img-arhivs:hover {opacity: 1;}
+
+
+.card-img-top {
+    width: 100%;
+    height: 30vh;
+    /* width: 30vw; */
+    object-fit: cover; /*ļooooti svarīgi, lai bildes nedeformētos!*/
+    opacity: 0.6;  
+    transition: opacity 0.2s;
+    border-radius: 5px 5px 0 0;
+    border-radius: 20px;
+}
+
+.card-img-top:hover {opacity: 1;}
+
+.overlay {
+    background-color: black;
+    border-radius: 5px 5px 0 0;
+    border-radius: 20px;
+}
+
+
+
+    
+.jaunumi-card {
+border-radius: 6px; 
+margin: 10px auto;
+}
+
+.apraksts h4 {
+font-size: 150%;
+font-weight: 700;
+margin: 10px 5px;
+justify-content: center;
+
+}
+
+.heading-link:link,
+.heading-link:visited {
+    color: #333;
+    font-size: 120%;
+}
+
+.heading-link:hover,
+.heading-link:active {
+    text-decoration: none;
+    background: #F4E332;
+}
+
+
+
+.card-date {
+font-size: 80%;
+padding-top: 10px;
+padding-left: 5px;
+color: #757575;
+margin: 5px;
+}
+
+.card-text {
+font-size: 90%;
+color: #555;
+margin: 10px !important;
+text-align: left;
+}
+
+
+
+/* ----------------------------------SLAIDERIS--------------------------------- */
+
+.slaideris {
+    padding: 0%;
+    background: black;
+}
+
+.opacity {opacity: 0.4;}
+
+.slaideris h5 {
+    font-size: 500%;
+    font-weight: 700;
+    color: #F4E332;
+}
+
+.carousel-caption {padding-bottom: 400px;}
+
+
+/* ================================= FOOTER ======================================== */
+footer {
+        background-color: #333;
+        padding: 30px 50px 0 50px;
+        font-size: 100%;  
+    }
+
+footer .row {width: 100%;}
+
+
+.footer-nav {
+        list-style: none;
+        display: flex;
+    }
+
+.social-links {
+        list-style: none;
+        align-content: center;
+        display: flex;
+    }
+
+
+.footer-nav li:last-child,
+.social-links li:last-child {
+    margin-right: 0;
+}
+
+.footer-nav li a:link,
+.footer-nav li a:visited,
+.social-links li a:link,
+.social-links li a:visited  {
+    font-size: 90%;
+    font-weight: bolder;
+    text-decoration: none;
+    border: none;
+    color: #ddd;
+    transition: color 0.2s;
+}
+
+
+.footer-nav li a:hover,
+.footer-nav li a:active,
+.social-links li a:hover,
+.social-links li a:active {
+    color: #F4E332;
+}
+
+.social-links li a:link,
+.social-links li a:visited {
+    font-size: 180%;
+}
+
+footer p {
+    font-size: 70%;
+    color: #ddd;
+    text-align: center;
+}
+
+.bull {
+    color: #F4E332;
+    font-weight: 900;
+}
+
+/* ----------------------------------------ARCHMUSEUM-IZSTADES------------------------------------------------ */
+.main-nav-izstades {
+    background-color: #5C5C5B;
+    /*uzlikt sticky efektu*/
+    padding: 0px 30px;
+    display: flex;
+
+}
+
+.nav-list {
+    margin-bottom: 0;
+    padding-right: 20px;
+}
+
+.main-post {
+    
+    /* background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://momenti.lv/pictures/img.php?img=429/momenti-odrija-heinrihsone-20150428-7.jpg'); */
+    background-size: cover;              /*komanda, lai attēls iezūmotos kā vajag*/
+    background-position: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.main-post p {
+    color: #DEDEDC;
+    font-weight: 400;
+    padding-bottom: 10px;
+}
+
+.main-post h1 {padding-top: 30px;}
+
+/* ---------------------------------ARHIVA IERAKSTI-------------------------------- */
+
+.ieraksti {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 650px) ;   
+}
+
+.ieraksti > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid red; */
+
+}
+
+.ieraksti h4 {font-size: 100% !important;}
+
+.img-arhivs {
+    width: 100%;
+    height: 30vh;
+    object-fit: cover;   
+}
+
+/* --------------------------------------BLOG----------------------------------------- */
+
+.ieraksti-blog {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 650px;   
+    padding-bottom: 20px;
+}
+
+
+.blog-img {
+   margin-top: 20px; 
+   width: 100%;
+   height: auto;
+   filter: grayscale(100%);
+   transition : filter 1000ms linear;
+   -webkit-filter: grayscale(100%);
+   -webkit-transition : -webkit-filter 1000ms linear;
+}
+
+.blog-img:hover {filter: none;}
+    
+.main-post p {
+        color: #DEDEDC;
+        font-weight: 400;
+        padding-bottom: 10px;
+    }
+ .blog h1 {
+       padding-top: 5px;
+       padding-bottom: 20px;
+       font-size: 500%;
+       text-align: center !important;
+    }
+
+.blog h2 {
+        padding-top: 5px;
+       font-size: 200%;
+       text-align: left;
+       font-weight: 400;
+       color: #555;
+    }
+
+.blog p {
+        text-indent: 70px;
+        text-align: justify;
+        line-height: 200%;
+    }
+
+    /* ------------------------------KONTAKTI-------------------------------- */
+    
+    .kontakti {
+        display: grid;
+        grid-gap: 10px;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 300px);   
+    }
+
+    .karte {
+        grid-row-start: 1;
+        grid-row-end: 3;
+    }
+    
+    .kontakti > div {
+        display: flex;
+        align-items: center;
+    }
+
+ .kontakti p {margin-bottom: 3px;}
+
+ .section-kontakti h1 {text-align: center;}
+
+ .tris-brali {
+    
+        background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://momenti.lv/pictures/img.php?img=1535/momenti-tony-hodgkinson-20160718-6.jpg');
+        background-size: cover;              /*komanda, lai attēls iezūmotos kā vajag*/
+        background-position: center;
+        background-attachment: fixed; 
+        display: flex;
+        height: 100vh;
+        
+ }
+
+ .tris-brali-container {
+     padding: 0 250px;
+ }
+
+ .tris-brali h1 {
+    text-align: center;
+    font-size: 900%;
+    padding-top: 0;
+ }
+
+ .tris-brali-img {
+    float:right;
+    width:600px;
+    height:auto; 
+    margin:10px 0 10px 10px;
+ }
+ 
+.tris-brali-text {
+    max-width: 75%;
+}
+
+.kolekcijas-width {
+    width: 75%;
+}
+
+.kolekcijas-apraksts {
+    color: #000;
+}
+
+.kolekcijas-apraksts a:link,
+.kolekcijas-apraksts a:visited {
+    text-decoration: none;
+    color: #000;
+}
+ 
+.kolekcijas-apraksts a:hover,
+.kolekcijas-apraksts a:active {
+    text-decoration: none;
+    background-color: #F4E332;
+}
+
+.kolekcijas-img {
+    float:left;
+    width:550px;
+    height:auto; 
+    margin:0 20px 40px 0px;
+}
+
+.kolekcijas-text {
+    max-width: 95%;
+    text-align: justify;
+    
+}
+
+.rounded-corners {
+    border-radius: 90px;
+    border: 1px solid #333;
+    height: 50px;
+    width: 350px;
+    margin-right: 10px;
+    padding: 15px;
+}
+
+form .header {
+    padding-left: 10px;
+    padding-bottom: 20px;
+    
+}

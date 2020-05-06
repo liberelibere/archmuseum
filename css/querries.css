@@ -1,0 +1,424 @@
+.active{
+    /* display: flex; */
+  }
+ 
+
+  /*tikai lielais izmērs 800 un uz augšu*/
+
+@media screen and (min-width: 970px) {
+    
+    nav {
+        height: 100px;
+        /* flex-direction: row; */
+        
+      }
+
+  .logo {
+      /* padding-left: 50px; */
+      /* margin: 0;
+      width: 20%; */
+    }
+  nav ul {
+      /* display: flex; */
+      justify-content: flex-end;
+      width: 100%;
+      /* flex-direction: row; */
+    }
+  ul li {
+      /* display: inline-block; */
+      margin: 0 70px 0 0;
+      /* text-align: left; */
+      border-bottom-style: none;
+      padding: 0;
+      
+      /* color: red; */
+    }
+  span.nav-toggle {
+      /* display: none; */
+    }
+
+    
+    
+  }
+
+  @media screen and (min-width: 1600px) {
+    .tris-brali-img {width:750px;}
+  }
+
+  @media screen and (min-width: 1300px) and (max-width: 1600px) {
+    .tris-brali-img {width:650px;}
+    .tris-brali-container {padding: 0 150px;}
+  }
+
+  @media screen and (min-width: 1000px) and (max-width: 1300px) {
+    .tris-brali-img {width:600px;}
+    .tris-brali-container {padding: 0 50px;}
+  }
+
+  @media screen and (min-width: 767px) and (max-width: 1000px) {
+    .tris-brali-img {width: 400px;}
+    .tris-brali-container {padding: 0 50px;}
+    .tris-brali-text {max-width: 100%;}
+  }
+
+
+
+
+
+
+
+
+
+/* big tablet and smaller computers*/
+@media only screen and (max-width: 1200px) {
+
+    
+
+    section {padding: 30px 0;}
+
+    .hero-text-box {
+        width: 100%;
+        padding: 0 2%;
+     }
+     .row { padding: 0 2%; }
+
+     .col-container {
+        display: flex;
+        width: 60%;
+    }
+
+    .carousel-caption {padding-bottom: 30px;}
+    .carousel-caption h5 {font-size: 400%;}
+
+
+        
+    .jaunumi-card {
+    margin: 10px auto;
+    }
+    
+    .apraksts h4 {
+    font-size: 150%;
+    font-weight: 700;
+    margin: 10px 5px;
+    justify-content: center;
+    
+    }
+    
+    .card-text {
+    font-size: 90%;
+    }
+
+    .ieraksti {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(4, 600px) ;   
+    }
+    
+    .apraksts .card-text {
+        font-size: 80%;
+    }
+
+    .blog-img {margin-top: 0px;}
+
+    .kontakti {
+        display: grid;
+        grid-gap: 5px;
+        grid-template-columns: repeat(2, 300px);
+        grid-template-rows: repeat(2, 300px);   
+    }
+
+    .karte {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        padding-bottom: 20px;
+    }
+
+    .kontakti h4 {
+        font-size: 120%;
+    }
+
+    .kontakti p {
+    font-size: 80%;
+    }
+
+    .section-kontakti {
+        padding-top: 10px;
+    }
+
+    .section-tris-brali{
+        padding-top: 20px;
+    }
+
+    embed, object, iframe{max-width: 100%;}
+
+    header {height: 1000px;} 
+    h1 {
+        padding-top: 100px;
+        font-size: 500%;
+        text-align: left;
+    }
+
+    
+    .kolekcijas-width {
+        width: 100%;
+    }
+    
+    .bull {
+        padding: 0 30px;
+    }
+
+    .social-links li {
+        display: flex;
+        font-size: 90%;
+        padding: 0 30px 0 0;
+    }
+   
+    .social-links li:last-child {padding: 0;}
+
+}
+
+
+/* small phones to small tablets 481 - 767px*/
+@media only screen and (max-width: 767px) {
+    body {font-size: 16px; }
+    section {padding: 30px 0;}
+
+    .container-btn {
+        min-width: 100vw;
+    }
+
+    .main-post {margin-top: 0px;}
+
+    .btn:link,
+    .btn:visited ,
+    input[type=submit] {
+        display: inline-block;
+        font-weight: 200;
+        font-size: 100%;
+        text-decoration: none;
+        border-radius: 200px;
+        color: #fff;
+        transition: background-color 0.2s, border 0.2s, color 0.2s;
+    }
+    
+    .btn-full:link,
+    .btn-full:visited ,
+    input[type=submit] {
+        background-color: #F4E332;
+        border: 1px solid #F4E332;
+        color: #555;
+        margin-right: 15px;
+    
+    }
+    
+    .btn-ghost:link,
+    .btn-ghost:visited {
+        border: 1px solid #F4E332;
+        color: #F4E332;
+    
+    }
+    
+    .btn:hover,
+    .btn:active,
+    input[type=submit]:hover,
+    input[type=submit]:active {
+        background-color: rgba(244, 228, 50, 0.5);
+    }
+    
+    .btn-full:hover,
+    .btn-full:active {
+        border: 1px solid rgba(244, 228, 50, 0.5);
+    }
+    
+    .btn-ghost:hover,
+    .btn-ghost:active {
+        border: 1px solid rgba(244, 228, 50, 0.5);
+        color: rgba(244, 228, 50, 0.5);
+        color: #555;
+    }
+
+    .jaunumi-card {width: 100%; margin-left: 0;}
+    
+    .card-text {
+        display: none;
+        }
+
+        .apraksts h4 {
+            font-size: 150%;
+            margin: 10px 5px;}
+
+            .ieraksti {
+                grid-template-columns: repeat(2, 1fr);
+                grid-template-rows: repeat(5, 365px) ;   
+            }
+.apraksts p {
+margin: 1px 0;
+/* line-height: 15px; */
+
+}
+
+
+.apraksts h4 {margin: 3px 0;}
+
+h1 {font-size: 400% !important ;}
+
+.blog p {
+/* ????? BLOG sadaļā teksts pazūd ārpus ekrāna malām, kā to salabot? */
+}
+
+
+
+
+.ieraksti-blog {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;   
+    padding-bottom: 20px;
+    
+}
+
+.section-arhivs h3 {
+    padding: 0;
+    
+}
+
+.blog-img {
+    margin-top: 0px; 
+    width: 100vw;
+ }
+
+ .kontakti {
+    display: grid;
+    grid-gap: 2px;
+    grid-template-columns: 300px;
+    grid-template-rows: repeat(3, 200px);   
+}
+
+.karte {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.darba-laiks {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.kontakti-kontakti {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+embed, object, iframe { 
+    max-width: 100%;
+max-height: 300px;
+}
+
+.tris-brali {height: 100vh;}
+
+/*-----------------------------------mobilde nav new--------------*/
+
+nav {
+    width: 100%;
+    color: #DEDEDC;
+    background-color: transparent;
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+
+  span.nav-toggle {
+    font-size: 30px;
+    display: inline-block;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+  }
+
+  .logo {
+    margin: 40px 0 40px 0;
+  }
+
+ ul {
+    /* flex-direction: column; */
+    justify-content: center;
+    padding-left: 0;
+  }
+
+  .bull {
+      padding: 0 10px;
+  }
+
+ header ul li {
+    font-size: 110%;
+    cursor: pointer;
+    margin: 10px;
+    text-align: center;
+  }
+
+
+
+ .footer-nav  li {
+    display: flex;
+    font-size: 100%;
+    line-height: 2rem;
+    text-align: center;
+ }
+
+ .copy {
+     align-self: center;
+ }
+
+ .social-links li {
+     display: flex;
+     font-size: 90%;
+     padding: 0 20px 0 0;
+ }
+
+ .social-links li:last-child {padding: 0;}
+  
+
+ header {height: 900px;} 
+
+ h1 {
+    padding-top: 50px;
+    font-size: 400%;
+    text-align: left;
+    
+}
+
+.tris-brali-img {
+    width: 550px; 
+    float: none;
+    margin: 10px;
+    padding-bottom: 15px;
+    
+}
+.tris-brali-container {padding: 0 10px;}
+.tris-brali-text {max-width: 100%;
+text-align: justify;}
+
+.kolekcijas-width {
+    width: 100%;
+}
+
+.rounded-corners {
+    border-radius: 90px;
+    border: 1px solid #333;
+    height: 47px;
+    width: 300px;
+    margin: 15px 0;
+    padding: 15px;
+}
+
+
+
+} 
+
+
+
+
+
+
+/* mazajā izmērā jālabo: footeris, header pogas */
