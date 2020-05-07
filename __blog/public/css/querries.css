@@ -1,45 +1,23 @@
-.active{
-    /* display: flex; */
-  }
- 
 
-  /*tikai lielais izmērs 800 un uz augšu*/
 
 @media screen and (min-width: 970px) {
     
     nav {
         height: 100px;
-        /* flex-direction: row; */
-        
       }
-
-  .logo {
-      /* padding-left: 50px; */
-      /* margin: 0;
-      width: 20%; */
-    }
+    
   nav ul {
-      /* display: flex; */
       justify-content: flex-end;
       width: 100%;
-      /* flex-direction: row; */
     }
   ul li {
-      /* display: inline-block; */
       margin: 0 70px 0 0;
-      /* text-align: left; */
       border-bottom-style: none;
       padding: 0;
-      
-      /* color: red; */
     }
-  span.nav-toggle {
-      /* display: none; */
-    }
-
-    
-    
   }
+
+/* special querry for tris-brali-img */
 
   @media screen and (min-width: 1600px) {
     .tris-brali-img {width:750px;}
@@ -62,41 +40,29 @@
   }
 
 
+/* OTHERS */
 
-
-
-
-
-
-
-/* big tablet and smaller computers*/
 @media only screen and (max-width: 1200px) {
-
     
+section {padding: 30px 0;}
 
-    section {padding: 30px 0;}
-
-    .hero-text-box {
+.hero-text-box {
         width: 100%;
         padding: 0 2%;
      }
-     .row { padding: 0 2%; }
+    
+.row { padding: 0 2%; }
 
-     .col-container {
+.col-container {
         display: flex;
         width: 60%;
     }
 
-    .carousel-caption {padding-bottom: 30px;}
-    .carousel-caption h5 {font-size: 400%;}
-
-
-        
-    .jaunumi-card {
-    margin: 10px auto;
-    }
-    
-    .apraksts h4 {
+.carousel-caption {padding-bottom: 30px;}
+.carousel-caption h5 {font-size: 400%;} 
+.jaunumi-card {margin: 10px auto;}
+   
+.apraksts h4 {
     font-size: 150%;
     font-weight: 700;
     margin: 10px 5px;
@@ -104,93 +70,77 @@
     
     }
     
-    .card-text {
-    font-size: 90%;
-    }
+.card-text {font-size: 90%;}
 
-    .ieraksti {
+.ieraksti {
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: repeat(4, 600px) ;   
     }
     
-    .apraksts .card-text {
-        font-size: 80%;
-    }
+.apraksts .card-text {font-size: 80%;}
 
-    .blog-img {margin-top: 0px;}
+.blog-img {margin-top: 0px;}
 
-    .kontakti {
+.kontakti {
         display: grid;
         grid-gap: 5px;
         grid-template-columns: repeat(2, 300px);
         grid-template-rows: repeat(2, 300px);   
     }
 
-    .karte {
+.karte {
         grid-column-start: 1;
         grid-column-end: 3;
         padding-bottom: 20px;
     }
 
-    .kontakti h4 {
-        font-size: 120%;
-    }
+.kontakti h4 {font-size: 120%;}
 
-    .kontakti p {
-    font-size: 80%;
-    }
+.kontakti p {font-size: 80%;}
 
-    .section-kontakti {
-        padding-top: 10px;
-    }
+.section-kontakti {padding-top: 10px;}
 
-    .section-tris-brali{
-        padding-top: 20px;
-    }
+.section-tris-brali{padding-top: 20px;}
 
-    embed, object, iframe{max-width: 100%;}
+embed, object, iframe{max-width: 100%;}
 
-    header {height: 1000px;} 
-    h1 {
-        padding-top: 100px;
-        font-size: 500%;
-        text-align: left;
-    }
-
+header {height: 1000px;} 
     
-    .kolekcijas-width {
-        width: 100%;
-    }
-    
-    .bull {
-        padding: 0 30px;
-    }
+h1 {
+   padding-top: 100px;
+   font-size: 500%;
+   text-align: left;
+}
 
-    .social-links li {
+.kolekcijas-width {width: 100%;}
+    
+.bull {padding: 0 30px;}
+
+.social-links li {
         display: flex;
         font-size: 90%;
         padding: 0 30px 0 0;
     }
    
-    .social-links li:last-child {padding: 0;}
+.social-links li:last-child {padding: 0;}
 
 }
 
 
-/* small phones to small tablets 481 - 767px*/
+
 @media only screen and (max-width: 767px) {
-    body {font-size: 16px; }
-    section {padding: 30px 0;}
+    
+body {font-size: 16px; }
 
-    .container-btn {
-        min-width: 100vw;
-    }
+section {padding: 30px 0;}
 
-    .main-post {margin-top: 0px;}
+.container-btn {min-width: 100vw;}
 
-    .btn:link,
-    .btn:visited ,
-    input[type=submit] {
+.main-post {margin-top: 0px;}
+
+.btn:link,
+.btn:visited ,
+input[type=submit] {
         display: inline-block;
         font-weight: 200;
         font-size: 100%;
@@ -200,73 +150,61 @@
         transition: background-color 0.2s, border 0.2s, color 0.2s;
     }
     
-    .btn-full:link,
-    .btn-full:visited ,
-    input[type=submit] {
+.btn-full:link,
+.btn-full:visited ,
+input[type=submit] {
         background-color: #F4E332;
         border: 1px solid #F4E332;
         color: #555;
         margin-right: 15px;
+}
     
-    }
-    
-    .btn-ghost:link,
-    .btn-ghost:visited {
+.btn-ghost:link,
+.btn-ghost:visited {
         border: 1px solid #F4E332;
         color: #F4E332;
-    
     }
     
-    .btn:hover,
-    .btn:active,
-    input[type=submit]:hover,
-    input[type=submit]:active {
-        background-color: rgba(244, 228, 50, 0.5);
+.btn:hover,
+.btn:active,
+input[type=submit]:hover,
+input[type=submit]:active {
+   background-color: rgba(244, 228, 50, 0.5);
     }
     
-    .btn-full:hover,
-    .btn-full:active {
+.btn-full:hover,
+.btn-full:active {
         border: 1px solid rgba(244, 228, 50, 0.5);
     }
     
-    .btn-ghost:hover,
-    .btn-ghost:active {
+.btn-ghost:hover,
+.btn-ghost:active {
         border: 1px solid rgba(244, 228, 50, 0.5);
         color: rgba(244, 228, 50, 0.5);
         color: #555;
     }
 
-    .jaunumi-card {width: 100%; margin-left: 0;}
+.jaunumi-card {width: 100%; margin-left: 0;}
     
-    .card-text {
+.card-text {
         display: none;
         }
 
-        .apraksts h4 {
-            font-size: 150%;
-            margin: 10px 5px;}
+.apraksts h4 {
+    font-size: 150%;
+    margin: 10px 5px;
+    }
 
-            .ieraksti {
-                grid-template-columns: repeat(2, 1fr);
-                grid-template-rows: repeat(5, 365px) ;   
+.ieraksti {
+     grid-template-columns: repeat(2, 1fr);
+     grid-template-rows: repeat(5, 365px) ;   
             }
-.apraksts p {
-margin: 1px 0;
-/* line-height: 15px; */
 
-}
-
+.apraksts p {margin: 1px 0;}
 
 .apraksts h4 {margin: 3px 0;}
 
 h1 {font-size: 400% !important ;}
-
-.blog p {
-/* ????? BLOG sadaļā teksts pazūd ārpus ekrāna malām, kā to salabot? */
-}
-
-
-
 
 .ieraksti-blog {
     display: grid;
@@ -315,7 +253,7 @@ max-height: 300px;
 
 .tris-brali {height: 100vh;}
 
-/*-----------------------------------mobilde nav new--------------*/
+/*-----------------------------------mobilde nav -----------------------------------------*/
 
 nav {
     width: 100%;
@@ -341,14 +279,11 @@ nav {
   }
 
  ul {
-    /* flex-direction: column; */
     justify-content: center;
     padding-left: 0;
   }
 
-  .bull {
-      padding: 0 10px;
-  }
+  .bull {padding: 0 10px;}
 
  header ul li {
     font-size: 110%;
@@ -357,8 +292,6 @@ nav {
     text-align: center;
   }
 
-
-
  .footer-nav  li {
     display: flex;
     font-size: 100%;
@@ -366,9 +299,7 @@ nav {
     text-align: center;
  }
 
- .copy {
-     align-self: center;
- }
+ .copy {align-self: center;}
 
  .social-links li {
      display: flex;
@@ -395,6 +326,7 @@ nav {
     padding-bottom: 15px;
     
 }
+
 .tris-brali-container {padding: 0 10px;}
 .tris-brali-text {max-width: 100%;
 text-align: justify;}
@@ -412,13 +344,5 @@ text-align: justify;}
     padding: 15px;
 }
 
-
-
 } 
 
-
-
-
-
-
-/* mazajā izmērā jālabo: footeris, header pogas */
