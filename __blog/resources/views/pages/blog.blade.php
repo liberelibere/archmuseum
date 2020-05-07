@@ -4,22 +4,14 @@
 
 @section('content')
 
-
-
-
-
-    <div class="container d-flex align-items-center justify-content-center mb-4 bg-black"><img src="{{$blogItem->img}}" alt="" class="blog-img"></div>
-    <div class="container blog d-flex">
-        
-            <div class="row">
-                <div class="col-12"><h1><span>{{$blogItem->title}}</span></h1></div>
-                <div class="col-12"><p><span>{{$blogItem->body}}</span></p></div> 
-            </div>
-        </div>
+ <div class="container d-flex align-items-center justify-content-center mb-4 bg-black"><img src="{{$blogItem->img}}" alt="" class="blog-img"></div>
+  <div class="container blog d-flex">
+      <div class="row">
+         <div class="col-12"><h1><span>{{$blogItem->title}}</span></h1></div>
+         <div class="col-12"><p><span>{{$blogItem->body}}</span></p></div> 
+      </div>
+  </div>
     
-
-
-
 
 
 <section class="section-arhivs pb-5 mb-xl-5 pt-5">
@@ -45,9 +37,9 @@
     </div>
 </section>
 
-    @endsection
+@endsection
 
-    @section('title', "BLOG")
+@section('title', "BLOG")
 
 
     
