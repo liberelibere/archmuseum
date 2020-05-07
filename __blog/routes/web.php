@@ -1,29 +1,5 @@
 <?php
 
-/*
-|--------------------------------------------------------------------------
-| Web Routes
-|--------------------------------------------------------------------------
-|
-| Here is where you can register web routes for your application. These
-| routes are loaded by the RouteServiceProvider within a group which
-| contains the "web" middleware group. Now create something great!
-|
-*/
-
-/**
- * 
- * http://localhost/
- * http://localhost/blog
- * http://localhost/kontakti
- * http://localhost/blog/1 (<--kuru bloga ierakstu gribam dabūt no datubāzes)
- * 
- * 
- * laravel dynamic roots
- * 
- * 
- */
-
 Route::get('/', function () {
     $posts = \App\Post::orderBy('created_at', 'DESC')
     ->take(4)
@@ -33,9 +9,6 @@ Route::get('/', function () {
         'posts' => $posts
       ]);
 });
-
-
-
 
 
 Route::get('/izstades', function () {
@@ -52,9 +25,7 @@ Route::get('/izstades', function () {
     return view('pages.izstades', [
     'posts' => $posts,
     'particular_post'=>  $particular_post
-    ]);
-
-   
+    ]);  
     
 });
 
@@ -64,8 +35,6 @@ Route::get('/izstades', function () {
 Route::get('/blog/{id}', function ($id) {
 
     $blogItem = \App\Post::find($id);
-    // ->take(1)
-    // ->get();
 
 
     $posts =  \App\Post::orderBy('created_at', 'DESC') 
@@ -78,7 +47,6 @@ Route::get('/blog/{id}', function ($id) {
     'blogItem' => $blogItem
     ]);
 
-
 });
 
 
@@ -86,9 +54,6 @@ Route::get('/muzejs', function () {
 
     return view('pages.muzejs');
 });
-
-// ------------
-
 
 
 use Illuminate\Http\Request;
@@ -102,30 +67,6 @@ Route::get('/contact', function () {
 
 });
 
-//-------
-
-// Route::post('/contact', function () {
-
-//     $variables = request()->all();
-//     $specific = request()->input('name', 'email');
-//     // dd($variables);
-
-//     // kodu, kas nosūta e-pastu
-
-//     $emailSend = false;
-
-//     if ($emailSend) {
-//         return redirect ('/contact')
-//         ->with('message', "Paldies!");
-//     } else {
-//         return redirect ('/contact')
-//         ->with('error', "Pieteikums nav reģistrēts, lūdzu mēģini vēlreiz!");
-//     }
-    
-// });
-
-
-
 
 Route::post('/contact', function (Request $request) {
 
@@ -134,6 +75,4 @@ Route::post('/contact', function (Request $request) {
     return redirect('/');
     
 });
-
-
 
