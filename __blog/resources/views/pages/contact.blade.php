@@ -18,8 +18,7 @@
             width="600"
             height="600"
             frameborder="0" style="border:0"
-            src="https://www.google.com/maps/embed/v1/place?key=AIzaSyCjEtcFQTD1weF116gzOd5jJf7QafozZIU
-              &q=Latvijas+Arhitektūras+muzejs,Riga+Latvia" allowfullscreen class="shadow">
+            src="https://www.google.com/maps/embed/v1/place?key=aaaaaaaaaaaaaaaaaa=Latvijas+Arhitektūras+muzejs,Riga+Latvia" allowfullscreen class="shadow">
           </iframe>
         </div>
         <div class="d-flex flex-column align-items-start ml-4 darba-laiks">
@@ -41,7 +40,6 @@
             <p><span>E-pasts: <a href="mailto:Inara.Appena@mantojums.lv" target="_top">Inara.Appena@mantojums.lv</a></span></p>
         </div>
     </div>
-    
 </section>
 
 
@@ -68,24 +66,16 @@
             <div class="header">
                <h4><span>PIERAKSTIES JAUNUMIEM</span></h4>
             </div>
-            
             <div class="input">
               <input type="text" class="button rounded-corners form-input" id="name" name="name" placeholder="Vārds...">
               <input type="email" class="button rounded-corners form-input" id="email" name="email" placeholder="e-pasts...">
               <input type="submit" class="button" name="Submit" id="btn-subscriber" value="Pieteikties">
             </div>
           </form>
-
-
         </div>
       </div>
     </div>
   </section>
-
-
-
-
-
 
 @endsection
 
